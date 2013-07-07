@@ -1,12 +1,12 @@
 #!/usr/bin/bash
 
-uploaddir="~/bup"
+uploaddir="/backup"
 
 date=`date + "+%Y-%m-%d"`
 
 outdir=$uploaddir/$date
 
-git add *
+git add $outdir
 
 git commit -m "auto upload"
 
